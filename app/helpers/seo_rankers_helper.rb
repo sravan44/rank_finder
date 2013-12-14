@@ -1,0 +1,2 @@
+module SeoRankersHelper
+end

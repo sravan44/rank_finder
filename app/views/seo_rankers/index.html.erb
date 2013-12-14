@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="widget-a" style="margin-top:30px">
+    	<%=form_tag('/getranks') do%>
+		   	<div class="finfo" style="margin-top: 7px;">
+					<%#=label_tag :engine, "Select The Engine",:class=>"label label-success"%>
+					<%#=select_tag :engine,options_for_select(ENGINES.collect{|x| x })%>
+				</div>
+			<div class="info">
+				<label class="label label-success">Key word</label>			
+				<%=text_field_tag :keyword%>
+			</div>
+			<div class="finfo">
+				<label class="label label-success"> Please Enter The Url</label>			
+				<%=text_field_tag :url%>
+			</div>
+			<div class="finfo">		
+				<%=submit_tag "please click to know the rank"%>
+			</div>
+		<%end%>
+	</div>
+</div>
+					
+
