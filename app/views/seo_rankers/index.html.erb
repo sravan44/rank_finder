@@ -1,23 +1,42 @@
-<div class="row">
-    <div class="widget-a" style="margin-top:30px">
-    	<%=form_tag('/getranks') do%>
+<div class="row" style="margin-top:30px;">
+    <div class="widget-a" style="height:100%;">
+    	<%=form_tag getranks_path,:remote=>true,:method=>:get do%>
 		   	<div class="finfo" style="margin-top: 7px;">
 					<%#=label_tag :engine, "Select The Engine",:class=>"label label-success"%>
 					<%#=select_tag :engine,options_for_select(ENGINES.collect{|x| x })%>
 				</div>
 			<div class="info">
-				<label class="label label-success">Key word</label>			
+				<div class="labelc"><span>Key word</span></div>			
 				<%=text_field_tag :keyword%>
 			</div>
 			<div class="finfo">
-				<label class="label label-success"> Please Enter The Url</label>			
+				<div class="labelc"><span> Please Enter The Url</span></div>			
 				<%=text_field_tag :url%>
 			</div>
 			<div class="finfo">		
-				<%=submit_tag "please click to know the rank"%>
+<!-- 				<%#=image_submit_tag 'get_answer.jpg',:style=>'height: 79px;width: 90px;' %><span>click to know the rank</span> -->
+				<%=submit_tag "click to know the rank"%>
 			</div>
 		<%end%>
 	</div>
+	<div id="rank_change">
+		<%= render 'rank_for' %>
+	</div>
+	<style type="text/css">
+	.labelc{
+		height:30px;
+		width:150px;
+		background-color: #234500;
+		float:left;
+		margin-right: 5px;
+		border-radius: 5px;
+		text-align: center;
+		color:white;
+	}
+	.labelc span{
+		margin-top :2px;
+	}
+	</style>
 </div>
 					
 

@@ -14,7 +14,7 @@ Pendurthi::Application.routes.draw do
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
     resources :seo_rankers
-    match '/getranks'=> 'seo_rankers#getranks'
+    match '/getranks'=> 'seo_rankers#getranks',:as => :getranks
 
   # Sample resource route with options:
   #   resources :products do

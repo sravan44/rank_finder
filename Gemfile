@@ -6,10 +6,10 @@ gem 'rails', '3.2.16'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2'
-gem 'rails-bootstrap-app-theme', :git => 'https://github.com/cloudbi/rails-bootstrap-app-theme.git' 
+# gem 'rails-bootstrap-app-theme', :git => 'https://github.com/cloudbi/rails-bootstrap-app-theme.git' 
 
-gem 'PageRankr'
-gem 'rankstar'
+# gem 'PageRankr'
+# gem 'rankstar'
 gem 'nokogiri'
 
 gem 'jquery-rails'

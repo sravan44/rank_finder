@@ -1,14 +1,15 @@
 <%# navigation styled for Twitter Bootstrap 3.0 %>
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-inverse ">
   <div class="container">
     <div class="navbar-header">
       <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> -->
         <!-- <span class="sr-only">Toggle navigation</span> -->
-        <span class="icon-bar"></span>
+        <span style="float:left">   <%=image_tag "seoicon.jpg",:style=>"width:100px;height:100px;"%></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= link_to 'Home', root_path, class: 'navbar-brand' %>
+      <%#= link_to 'Home', root_path, class: 'navbar-brand' %>
+      <p class="header-welcome">Welcome To The Rank Finder</p>
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
@@ -16,4 +17,16 @@
       </ul>
     </div>
   </div>
+<style>
+  .header-welcome{
+    float: left;
+    font-weight: 200;
+    font-size: 48px;
+    margin-top: 40px;
+    margin-left: 45px;
+    font-style: oblique;
+    color: teal;
+  }
+
+</style>
 </nav>

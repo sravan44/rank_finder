@@ -14,3 +14,14 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree .
+
+
+
+$(document).on({
+  ajaxStart: function() {
+    $("#loader").css("display","block")
+  },
+  ajaxStop: function() {
+    $("#loader").css("display","none")
+  }
+});

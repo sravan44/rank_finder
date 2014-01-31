@@ -1,0 +1,36 @@
+<div class="div-li" style="float:left"><%="Url"%></div>
+<div class="div-li" style="float:left"><%="Keyword"%></div>
+<div class="div-li" style="float:left">
+	<%="Rank in Google"%>
+</div>
+<div class="div-li" style="float:left">
+	<%="Rank in Yahoo"%>	
+</div>
+<div class="div-li" style="float:left">
+	<%="Rank in Bing"%>	
+</div>
+
+</br>
+<div style="margin-top:3px">
+	<div class="div-li" style="float:left"><%=params[:url].truncate(18) if params[:url].present?%></div>
+	<div class="div-li" style="float:left"><%=params[:keyword] if params[:keyword].present?%></div>
+	<div class="div-li" style="float:left">
+		<%=@rank["google"] if @rank["google"]%>
+	</div>
+	<div class="div-li" style="float:left">
+		<%=@rank["yahoo"] if @rank["yahoo"]%>	
+	</div>
+	<div class="div-li" style="float:left">
+		<%=@rank["bing"] if @rank["bing"]%>	
+	</div>
+	<style type="text/css">
+		.div-li{
+			background-color: white;
+			height:20px;
+			width: 170px;
+			color:blue;
+			margin-right: 3px;
+			text-align: center;
+		}
+	</style> 	
+</div>
